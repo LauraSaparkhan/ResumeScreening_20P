@@ -84,3 +84,28 @@ def compare_entity_match(resume_text, job_text):
     matching_entities = resume_entities & job_entities
     entity_match_score = len(matching_entities) / len(job_entities) * 100 if job_entities else 0
     return matching_entities, entity_match_score
+
+
+def compare_experience(resume_text, job_text):
+    """Compare years of experience between resume and job description"""
+    # Get list of years for both resume and job description
+    resume_years = extract_experience_years(resume_text)
+    job_required_years = extract_experience_years(job_text)
+    return resume_years, job_required_years
+
+
+def compare_semantic_similarity(resume_text, job_text, model):
+    """Compare semantic similarity using BERT model"""
+
+    # Encode the resume text into a dense vector using the BERT model
+    resume_embedding = model.encode(resume_text, convert_to_tensor=True)
+
+    # Encode the job description text into a dense vector using the same BERT model
+    job_embedding = model.encode(job_text, convert_to_tensor=True)
+
+    # Calculate the cosine similarity between the resume and job description embeddings
+    semantic_score = util.cos_sim(resume_embedding, job_embedding).item()
+
+    # Return the computed semantic similarity score
+    return semantic_score
+
