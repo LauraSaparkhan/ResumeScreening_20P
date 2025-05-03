@@ -42,3 +42,45 @@ def extract_entities(text):
 
     return entities  # Return the list of extracted entities
 
+def extract_experience_years(text):
+    """Extract the number of years of experience from the text."""
+    # Convert the text to lowercase so we can handle different cases like "Years" or "years"
+    text = text.lower()
+
+    # Defining a pattern to find the years of experience in text.
+    # The pattern looks for numbers followed by 'years', 'yrs', 'experience', 'exp'
+    pattern = r'(\d+)\s*(?:years|yrs|experience|exp)'
+
+    # Using re.findall to find all matches of the pattern in the text
+    matches = re.findall(pattern, text)
+
+    # If we found any matches, convert them to integers
+    if matches:
+        years = [int(match) for match in matches]
+        # Return the largest number found (in case there are multiple numbers in the text)
+        return max(years)
+    else:
+        # If no experience is found, return 0
+        return 0
+
+def compare_keyword_match(resume_text, job_text):
+    """Compare keyword match score"""
+    # Get list of tokens for both resume and job description
+    resume_tokens = set(preprocess_text(resume_text)) 
+    job_tokens = set(preprocess_text(job_text)) 
+    # Get common words between lists and divide it by the number of tokens to find out the percentage
+    common_keywords = resume_tokens & job_tokens
+    keyword_match_score = len(common_keywords) / len(job_tokens) * 100 if job_tokens else 0
+    return common_keywords, keyword_match_score
+
+
+def compare_entity_match(resume_text, job_text):
+    """Compare named entity match score"""
+    # Get list of entities for both resume and job description
+    resume_entities = set(extract_entities(resume_text))
+    job_entities = set(extract_entities(job_text))
+
+    # Get common entities and divide it by the sum of entities in job description
+    matching_entities = resume_entities & job_entities
+    entity_match_score = len(matching_entities) / len(job_entities) * 100 if job_entities else 0
+    return matching_entities, entity_match_score
