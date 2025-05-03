@@ -94,7 +94,7 @@ def compare_experience(resume_text, job_text):
     return resume_years, job_required_years
 
 
-def compare_semantic_similarity(resume_text, job_text, model):
+def compare_semantic_similarity(resume_text, job_text):
     """Compare semantic similarity using BERT model"""
 
     # Encode the resume text into a dense vector using the BERT model
