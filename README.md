@@ -78,6 +78,7 @@ Unsupported file types should trigger an error.
 - [Streamlit Docs](https://docs.streamlit.io/)
 - [PyMuPDF](https://pymupdf.readthedocs.io/)
 - [spaCy Entity Types](https://spacy.io/api/annotation#named-entities)
+- [VisualCV Resume Samples Attribution](docs/VisualCV_Attribution.md)
 
 ## Team Members
 - Laura Saparkhan, 220103028, 20P
