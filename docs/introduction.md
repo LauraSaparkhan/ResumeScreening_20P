@@ -98,7 +98,19 @@ Uses regex to search for experience patterns (e.g., “5 years of experience”)
 ## 📈 Sample Output
 
 ```python
-common_keywords, keyword_score = compare_keyword_match(resume, job)
-entities, entity_score = compare_entity_match(resume, job)
-resume_years, job_years = compare_experience(resume, job)
-similarity = compare_semantic_similarity(resume, job)
+Results
+Keyword Match Score: 55.46%
+
+Common Keywords: agile, analyst, angular, apache, api, application, architecture, build, client, code, common, computer, create, css, cycle, database, datum, debug, deployment, design, detail, develop, developer, development, documentation, effective, end, experience, feature, framework, function, functional, improve, java, javascript, job, jquery, knowledge, language, library, life, like, manage, methodology, mongodb, multiple, mysql, produce, relevant, requirement, responsibility, responsible, science, security, server, software, solution, stack, technical, test, ui, ux, web, work, write, xml
+
+Named Entity Match Score: 50.00%
+
+Matching Entities: apache, java, javascript, jquery, xml
+
+Experience in Resume: 6 years
+
+Required Experience: 0 years
+
+Experience Match: Meets or exceeds requirement
+
+Semantic Similarity (BERT): 0.38
