@@ -1,0 +1,41 @@
+Job Title: Senior Data Analyst / Data Science Lead
+
+Location: Almaty, Kazakhstan (Hybrid or Remote Possible)
+
+Job Type: Full-time
+
+About the Role:
+
+We are seeking a highly experienced and innovative Senior Data Analyst to join our team and lead data-driven initiatives that support research, education, and strategic decision-making. The ideal candidate will bring over 10 years of experience in data analysis, software engineering, and leadership—ideally within academic or research institutions. A background in computer science, strong analytical skills, and a passion for using data to drive innovation are essential.
+
+Key Responsibilities:
+
+Lead and mentor a team of data analysts and developers.
+
+Design and implement statistical models to predict income and expenditure patterns in research and innovation projects.
+
+Provide strategic insights and reporting to university boards, government agencies (e.g., National Science Foundation), and internal stakeholders.
+
+Build, automate, and maintain dashboards and analytics platforms (e.g., Tableau) for various departments, including IT and contract management.
+
+Develop and document best practices for analytics, application development, and security.
+
+Ensure data quality through robust validation systems and audits.
+
+Collaborate with cross-functional teams to integrate data systems and support software applications in education and research environments.
+
+Qualifications:
+
+Master’s degree in Computer Science (Professional Science Master’s preferred); Bachelor’s also in CS.
+
+10+ years of experience in IT, with proven progression into data analytics and leadership roles.
+
+Strong proficiency in SQL, SAS, JMP, SPSS, and Tableau.
+
+Familiarity with C/C++, HTML, and JavaScript.
+
+Experience in developing applications and dashboards for academic institutions or enterprise platforms.
+
+Excellent communication and documentation skills.
+
+Background in both backend development and statistical modeling.
