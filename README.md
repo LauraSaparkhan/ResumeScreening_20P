@@ -16,20 +16,20 @@ It's not always easy for recruiters and job seekers to figure out if a resume is
 ## Installation Instructions
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/resume-matcher.git
+git clone https://github.com/LauraSaparkhan/ResumeScreening_20P.git
 ```
 2. Navigate into the project directory
-cd resume-matcher
-
+```bash
+cd ResumeScreening_20P
+```
 3. Install dependencies
+```bash
 pip install -r requirements.txt
-
-4. Download the SpaCy NLP model
-python -m spacy download en_core_web_sm
-
-5. Start the application
+```
+4. Start the application
+```bash
 streamlit run app.py
-
+```
 ## Usage Guide
 ## Testing
 ## References
