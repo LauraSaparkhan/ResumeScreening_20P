@@ -31,10 +31,53 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 ## Usage Guide
+1. Launch the web app using streamlit run app.py or simply access https://resume-screening-20p.streamlit.app/.
+
+2. Upload a resume (PDF, DOCX, or TXT).
+
+3. Upload a job description (PDF, DOCX, or TXT).
+
+4. View comparison results:
+- Keyword match score and common terms
+- Named entity match score
+- Years of experience comparison
+- Semantic similarity score (via BERT)
 ## Testing
+1. File Upload
+- Upload TXT, DOCX, and PDF files.
+- Ensure text is correctly extracted from each file type.
+Unsupported file types should trigger an error.
+
+2. Keyword Match
+- Upload a Resume and Job Description with overlapping keywords.
+- Verify the Keyword Match Score and Common Keywords list.
+
+3. Entity Match
+- Upload files with named entities (e.g., skills, organizations).
+- Check the Entity Match Score and Extracted Entities.
+
+4. Experience Comparison
+- Upload a Resume and Job Description with experience data.
+- Verify the Experience Match score for accurate year comparison.
+
+5. Semantic Similarity
+- Upload contextually similar Resume and Job Description.
+- Check the Semantic Similarity Score (should range between 0 and 1).
+
+6. Edge Cases
+- Test with empty files, unsupported file types, and large files.
+- Verify the app provides proper error messages or handles them gracefully.
+
+7. Cross-Browser Compatibility
+- Test the app on different browsers (e.g., Chrome, Firefox).
+- Ensure consistent functionality and UI across browsers.
 ## References
+
+- [SpaCy](https://spacy.io/)
+- [SentenceTransformers](https://www.sbert.net/)
+- [Streamlit Docs](https://docs.streamlit.io/)
+- [PyMuPDF](https://pymupdf.readthedocs.io/)
+- [spaCy Entity Types](https://spacy.io/api/annotation#named-entities)
+
 ## Team Members
-
-
-
-https://resume-screening-20p.streamlit.app/
+- Laura Saparkhan, 220103028, 20P
